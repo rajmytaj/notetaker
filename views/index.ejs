@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Notetaker</title>
 
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+<head>
+  <title>Notetaker</title>
 
-    <!-- <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script> -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
-  </head>
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+  <!-- <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script> -->
+  <script type="text/javascript" src="/scripts/app.js"></script>
+</head>
+
+<body>
+  <h2>Login</h1>
+  <section class="form signin">
+    <form action="/login" method="post">
+
+      <input id="login-email" name="email" placeholder="Email">
+      <br><br>
+
+      <input id="login-password" name="password" type="password" placeholder="Password">
+      <br><br>
+
+      <button type="submit" class="gold-button">Login</button>
+    </form>
+  </section>
+  <h2>Register</h2>
+  <section class="form signup display-none">
+    <form action="/register" method="post">
+      <br></br>
+      <input id="register-username" name="username" placeholder="Username">
+      <br><br>
+
+      <input id="register-email" name="email" placeholder="Email">
+      <br><br>
+
+      <input id="register-password" name="password" type="password" placeholder="Password">
+      <br><br>
+
+      <input id="register-password_confirmation" name="password_confirmation" type="password" placeholder="Confirm Password">
+      <br><br>
+
+      <button class="gold-button">Register</button>
+    </form>
+  </section>
+</body>
+
 </html>
